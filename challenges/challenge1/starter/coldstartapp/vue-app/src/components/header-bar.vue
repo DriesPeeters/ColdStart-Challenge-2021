@@ -1,10 +1,12 @@
 <script>
 import HeaderBarBrand from '@/components/header-bar-brand.vue';
+import AuthLogin from './auth-login.vue';
 
 export default {
   name: 'HeaderBar',
   components: {
     HeaderBarBrand,
+    AuthLogin,
   },
   data() {
     return {
@@ -24,6 +26,7 @@ export default {
           <router-link class="navbar-item nav-home" to="/">Home</router-link>
         </div>
       </div>
+      <AuthLogin></AuthLogin>
     </nav>
   </header>
 </template>
