@@ -25,6 +25,14 @@ export default {
         <div class="navbar-start">
           <router-link class="navbar-item nav-home" to="/">Home</router-link>
         </div>
+        <div class="navbar-end">
+          <div class="navbar-item auth-link">
+            <AuthLogin :provider="GitHub"/>
+          </div>
+          <div class="navbar-item auth-link">
+            <AuthLogout/>
+          </div>
+        </div>
       </div>
       <AuthLogin></AuthLogin>
     </nav>
