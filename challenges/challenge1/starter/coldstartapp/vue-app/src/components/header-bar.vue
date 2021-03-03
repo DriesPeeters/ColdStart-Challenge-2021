@@ -1,12 +1,14 @@
 <script>
 import HeaderBarBrand from '@/components/header-bar-brand.vue';
 import AuthLogin from './auth-login.vue';
+import AuthLogout from './auth-logout.vue';
 
 export default {
   name: 'HeaderBar',
   components: {
     HeaderBarBrand,
     AuthLogin,
+    AuthLogout,
   },
   data() {
     return {
@@ -27,7 +29,7 @@ export default {
         </div>
         <div class="navbar-end">
           <div class="navbar-item auth-link">
-            <AuthLogin :provider="GitHub"/>
+            <AuthLogin provider="GitHub"/>
           </div>
           <div class="navbar-item auth-link">
             <AuthLogout/>
