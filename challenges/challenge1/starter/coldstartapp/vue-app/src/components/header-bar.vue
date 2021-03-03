@@ -19,6 +19,7 @@ export default {
   },
   async created() {
     this.user = await getUserInfo();
+    console.log(this.user);
   },
   methods: {
   },
@@ -37,7 +38,7 @@ export default {
           <div class="navbar-item auth-link" v-if="!user">
             <AuthLogin provider="GitHub"/>
           </div>
-          <div class="navbar-item auth-link" v-if="user">>
+          <div class="navbar-item auth-link" v-if="user">
             <AuthLogout/>
           </div>
         </div>
